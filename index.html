@@ -88,15 +88,15 @@
             <!-- Secondary navigation (text links + icons like cart, notifications, profile) -->
             <div class="nav-bar__s3">
                 <p>Courses</p>
-                
+
                 <!-- Dropdown container for My Learning section -->
                 <div class="nav-bar__s3-mylearning">
-                    <p>My Learning</p> 
+                    <p>My Learning</p>
                     <div class="nav-bar__s3-mylearning-menu">
                         <p>You did not purchased anything yet</p>
                     </div>
                 </div>
-                
+
 
                 <!-- Icons grouped here because they are related user actions -->
                 <svg class="nav-bar__s3-icons" xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -130,7 +130,15 @@
             <!-- Mobile menu toggle icon grouped separately for responsive navigation -->
 
             <div class="nav-bar__s4">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M3.5 7.5h17a1.5 1.5 0 1 0 0-3h-17a1.5 1.5 0 1 0 0 3zM20.5 10.5h-17a1.5 1.5 0 1 0 0 3h17a1.5 1.5 0 1 0 0-3zM20.5 16.5h-17a1.5 1.5 0 1 0 0 3h17a1.5 1.5 0 1 0 0-3z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve">
+                    <g>
+                        <path
+                            d="M3.5 7.5h17a1.5 1.5 0 1 0 0-3h-17a1.5 1.5 0 1 0 0 3zM20.5 10.5h-17a1.5 1.5 0 1 0 0 3h17a1.5 1.5 0 1 0 0-3zM20.5 16.5h-17a1.5 1.5 0 1 0 0 3h17a1.5 1.5 0 1 0 0-3z"
+                            fill="#000000" opacity="1" data-original="#000000"></path>
+                    </g>
+                </svg>
             </div>
 
         </nav>
@@ -138,11 +146,11 @@
 
     </header>
 
-    
-     <!-- Main element wraps the primary unique content of this page -->
+
+    <!-- Main element wraps the primary unique content of this page -->
 
     <main>
-                <!-- Categories section separated from main nav for clearer structure -->
+        <!-- Categories section separated from main nav for clearer structure -->
         <section class="categories">
             <!-- List used because categories are grouped related items -->
             <ul class="categories_list">
@@ -190,34 +198,53 @@
                 <!-- Each course is an article because it is a standalone piece of content -->
                 <article class="courses__item">
                     <img class="courses__img" src="./images/CI-1.webp" alt="2026 Python Data Visualization Masterclas">
-                    <h3>2026 Python Data Visualization Masterclass</h3>
-                    <p>Col Steele</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹499 <del>1999</del></p>
+                    <div class="courses__content">
+                        <h3>2026 Python Data Visualization Masterclass</h3>
+                        <p>Col Steele</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹499 <del>1999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/CI-2.jpg" alt="Web Development Bootcamp 2026 | Advance">
-                    <h3>Web Development Bootcamp 2026 | Advance</h3>
-                    <p>Col Steele</p>
-                    <p>3.8 <span aria-hidden="true">⭐⭐⭐</span></p>
-                    <p>₹699 <del>3999</del></p>
+                    <div class="courses__content">
+                        <h3>Web Development Bootcamp 2026 | Advance</h3>
+                        <p>Col Steele</p>
+                        <p>3.8 <span aria-hidden="true">⭐⭐⭐</span></p>
+                        <p>₹699 <del>3999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-3.png" alt="Master UI/UX Designing with Figma">
-                    <h3>Master UI/UX Designing with Figma</h3>
-                    <p>Col Steele</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹1499 <del>11999</del></p>
+                    <div class="courses__content">
+                        <h3>Master UI/UX Designing with Figma</h3>
+                        <p>Col Steele</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹1499 <del>11999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-4.jpeg" alt="Basic to advance java core training">
-                    <h3>Basic to advance java core training</h3>
-                    <p>Col Steele</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹799 <del>1750</del></p>
+                    <div class="courses__content">
+                        <h3>Basic to advance java core training</h3>
+                        <p>Col Steele</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹799 <del>1750</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <!-- Additional course articles follow same structure -->
@@ -261,68 +288,106 @@
             <div class="courses__list">
                 <!-- Courses repeated as standalone articles -->
                 <article class="courses__item">
-                    <img class="courses__img" src="./images/CI-1.webp" alt="2026 Python Data Visualization Masterclas">
-                    <h3>2026 Python Data Visualization Masterclass</h3>
-                    <p>Col Steele</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹499 <del>1999</del></p>
+                    <div class="courses__content"><img class="courses__img" src="./images/CI-1.webp"
+                            alt="2026 Python Data Visualization Masterclas">
+                        <h3>2026 Python Data Visualization Masterclass</h3>
+                        <p>Col Steele</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹499 <del>1999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/CI-2.jpg" alt="Web Development Bootcamp 2026 | Advance">
-                    <h3>Web Development Bootcamp 2026 | Advance</h3>
-                    <p>Col Steele</p>
-                    <p>3.8 <span aria-hidden="true">⭐⭐⭐</span></p>
-                    <p>₹699 <del>3999</del></p>
+                    <div class="courses__content">
+                        <h3>Web Development Bootcamp 2026 | Advance</h3>
+                        <p>Col Steele</p>
+                        <p>3.8 <span aria-hidden="true">⭐⭐⭐</span></p>
+                        <p>₹699 <del>3999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-3.png" alt="Master UI/UX Designing with Figma">
-                    <h3>Master UI/UX Designing with Figma</h3>
-                    <p>Col Steele</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹1499 <del>11999</del></p>
+                    <div class="courses__content">
+                        <h3>Master UI/UX Designing with Figma</h3>
+                        <p>Col Steele</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹1499 <del>11999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-4.jpeg" alt="Basic to advance java core training">
-                    <h3>Basic to advance java core training</h3>
-                    <p>Col Steele</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹799 <del>1750</del></p>
+                    <div class="courses__content">
+                        <h3>Basic to advance java core training</h3>
+                        <p>Col Steele</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹799 <del>1750</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-5.png" alt="Complete React.js Developer Bootcamp">
-                    <h3>Complete React.js Developer Bootcamp</h3>
-                    <p>Angela Yu</p>
-                    <p>4.7 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹899 <del>2999</del></p>
+                    <div class="courses__content">
+                        <h3>Complete React.js Developer Bootcamp</h3>
+                        <p>Angela Yu</p>
+                        <p>4.7 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹899 <del>2999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-6.png" alt="Advanced Node.js & Express Mastery">
-                    <h3>Advanced Node.js & Express Mastery</h3>
-                    <p>Maximilian Schwarzmüller</p>
-                    <p>4.6 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹749 <del>3499</del></p>
+                    <div class="courses__content">
+                        <h3>Advanced Node.js & Express Mastery</h3>
+                        <p>Maximilian Schwarzmüller</p>
+                        <p>4.6 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹749 <del>3499</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
+
+
                 </article>
 
                 <article class="courses__item">
                     <img class="courses__img" src="./images/Cl-7.webp" alt="Full Stack MERN Project Workshop">
-                    <h3>Full Stack MERN Project Workshop</h3>
-                    <p>Stephen Grider</p>
-                    <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹1199 <del>4999</del></p>
-                </article>
+                    <div class="courses__content">h3>Full Stack MERN Project Workshop</h3>
+                        <p>Stephen Grider</p>
+                        <p>4.8 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                        <p>₹1199 <del>4999</del></p>
+                        <button class="courses__button">Enroll now</button>
+                    </div>
 
-                <article class="courses__item">
-                    <img class="courses__img" src="./images/Cl-8.webp" alt="Modern CSS & Responsive Design Pro">
-                    <h3>Modern CSS & Responsive Design Pro</h3>
-                    <p>Jonas Schmedtmann</p>
-                    <p>4.9 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
-                    <p>₹699 <del>2499</del></p>
-                </article>
+                    </article>
+
+                        <article class="courses__item">
+                            <img class="courses__img" src="./images/Cl-8.webp" alt="Modern CSS & Responsive Design Pro">
+                            <div class="courses__content">
+                                <h3>Modern CSS & Responsive Design Pro</h3>
+                                <p>Jonas Schmedtmann</p>
+                                <p>4.9 <span aria-hidden="true">⭐⭐⭐⭐</span></p>
+                                <p>₹699 <del>2499</del></p>
+                                <button class="courses__button">Enroll now</button>
+                            </div>
+
+
+                        </article>
             </div>
         </section>
 

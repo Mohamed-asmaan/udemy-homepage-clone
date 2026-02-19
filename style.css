@@ -187,6 +187,7 @@ body {
 
 .courses {
     padding: 20px;
+
 }
 
 .courses__header {
@@ -209,9 +210,20 @@ body {
     gap: 20px;
 }
 
+.courses__content {
+    padding: 20px;
+}
+
 .courses__item {
     flex-basis: 20%;
     flex-grow: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.courses__item:hover {
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
 }
 
 .courses__item h3 {
@@ -230,6 +242,16 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.courses__button {
+    background-color: blueviolet;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    border-color: blueviolet;
+    margin-top: 20px;
 }
 
 /* ===================================================== */
@@ -329,6 +351,7 @@ body {
         transform: scale(0);
         opacity: 0;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -385,6 +408,9 @@ body {
     .courses__item {
         flex-basis: 40%;
     }
+    .courses__content {
+    padding: 10px;
+}
 }
 
 @media screen and (max-width: 500px) {
