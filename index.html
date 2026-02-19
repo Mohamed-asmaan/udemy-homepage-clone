@@ -88,7 +88,14 @@
             <!-- Secondary navigation (text links + icons like cart, notifications, profile) -->
             <div class="nav-bar__s3">
                 <p>Courses</p>
-                <div class="nav-bar__s3-mylearning"><p>My Learning</p> <div class="nav-bar__s3-mylearning-menu"><p>You did not purchased anything yet</p></div></div>
+                
+                <!-- Dropdown container for My Learning section -->
+                <div class="nav-bar__s3-mylearning">
+                    <p>My Learning</p> 
+                    <div class="nav-bar__s3-mylearning-menu">
+                        <p>You did not purchased anything yet</p>
+                    </div>
+                </div>
                 
 
                 <!-- Icons grouped here because they are related user actions -->
@@ -120,6 +127,8 @@
                 </svg>
             </div>
 
+            <!-- Mobile menu toggle icon grouped separately for responsive navigation -->
+
             <div class="nav-bar__s4">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M3.5 7.5h17a1.5 1.5 0 1 0 0-3h-17a1.5 1.5 0 1 0 0 3zM20.5 10.5h-17a1.5 1.5 0 1 0 0 3h17a1.5 1.5 0 1 0 0-3zM20.5 16.5h-17a1.5 1.5 0 1 0 0 3h17a1.5 1.5 0 1 0 0-3z" fill="#000000" opacity="1" data-original="#000000"></path></g></svg>
             </div>
@@ -129,7 +138,9 @@
 
     </header>
 
-    <!-- Main content of the page -->
+    
+     <!-- Main element wraps the primary unique content of this page -->
+
     <main>
                 <!-- Categories section separated from main nav for clearer structure -->
         <section class="categories">
@@ -317,7 +328,9 @@
 
     </main>
 
-    <!-- Footer contains secondary links and branding -->
+    <!-- Footer used because it contains secondary navigation and site-wide information -->
+
+
     <footer class="footer">
 
         <!-- Footer links grouped into categories -->

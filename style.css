@@ -1,23 +1,29 @@
-/* Global Reset & Base Styles */
+/* ===================================================== */
+/* 1. GLOBAL RESET */
+/* ===================================================== */
 
 * {
     padding: 0;
     margin: 0;
 }
 
+/* ===================================================== */
+/* 2. BASE STYLES */
+/* ===================================================== */
+
 body {
     font-family: "Gabarito", sans-serif;
 }
 
-
-/* Navigation Bar */
+/* ===================================================== */
+/* 3. LAYOUT - HEADER & NAVIGATION */
+/* ===================================================== */
 
 .sticky-nav {
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 2;
-
 }
 
 .nav-bar {
@@ -27,10 +33,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: black;
+    border-bottom: 1px solid black;
 }
+
+/* ===================================================== */
+/* 4. NAV COMPONENTS */
+/* ===================================================== */
 
 .nav-bar__s1 {
     display: flex;
@@ -83,10 +91,6 @@ body {
     cursor: pointer;
 }
 
-.nav-bar__s3-mylearning:hover .nav-bar__s3-mylearning-menu {
-    display: block;
-}
-
 .nav-bar__s3-mylearning-menu {
     position: absolute;
     background-color: white;
@@ -98,12 +102,17 @@ body {
     border: 1px solid gray;
 }
 
+.nav-bar__s3-mylearning:hover .nav-bar__s3-mylearning-menu {
+    display: block;
+}
+
 .nav-bar__s4 {
     display: none;
 }
 
-
-/* Categories Section */
+/* ===================================================== */
+/* 5. CATEGORIES */
+/* ===================================================== */
 
 .categories {
     padding: 10px;
@@ -123,19 +132,14 @@ body {
     background-color: blueviolet;
     color: white;
     border-radius: 999px;
-    transition-duration: 300ms;
+    transition: 300ms;
     cursor: pointer;
     border: 1px solid blueviolet;
 }
 
-.categories__item:hover,
-.hero-section__content-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: blueviolet;
-}
-
-
-/* Hero Section */
+/* ===================================================== */
+/* 6. HERO SECTION */
+/* ===================================================== */
 
 .hero-section {
     display: flex;
@@ -159,11 +163,8 @@ body {
     padding: 40px;
     margin: 20px;
     background-color: white;
-    animation-name: zoom;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
+    animation: zoom 2s ease-in forwards;
     opacity: 0;
-    animation-fill-mode: forwards;
 }
 
 .hero-section__content h1 {
@@ -180,8 +181,9 @@ body {
     cursor: pointer;
 }
 
-
-/* Courses Sections */
+/* ===================================================== */
+/* 7. COURSES */
+/* ===================================================== */
 
 .courses {
     padding: 20px;
@@ -208,7 +210,6 @@ body {
 }
 
 .courses__item {
-    /* width: 350px; */
     flex-basis: 20%;
     flex-grow: 1;
 }
@@ -231,8 +232,9 @@ body {
     object-fit: cover;
 }
 
-
-/* Topics Section */
+/* ===================================================== */
+/* 8. TOPICS */
+/* ===================================================== */
 
 .topics {
     padding: 20px;
@@ -257,12 +259,10 @@ body {
     outline-color: blueviolet;
 }
 
-
 .topics_list {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     gap: 20px;
     list-style: none;
 }
@@ -274,19 +274,18 @@ body {
     flex-grow: 1;
     flex-basis: 30%;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 .topics__button:hover {
-
     background-color: blueviolet;
     border-color: blueviolet;
     color: white;
-    cursor: pointer;
-
 }
 
-
-/* Footer Section */
+/* ===================================================== */
+/* 9. FOOTER */
+/* ===================================================== */
 
 .footer {
     background-color: black;
@@ -321,40 +320,39 @@ body {
     padding: 10px;
 }
 
+/* ===================================================== */
+/* 10. ANIMATIONS */
+/* ===================================================== */
+
 @keyframes zoom {
     0% {
-
         transform: scale(0);
         opacity: 0;
-
-
     }
-
     100% {
-
         transform: scale(1);
         opacity: 1;
-
-
     }
 }
 
-@media screen and (max-width:1024px) {
+/* ===================================================== */
+/* 11. MEDIA QUERIES */
+/* ===================================================== */
+
+@media screen and (max-width: 1024px) {
     .courses__item {
-    /* width: 350px; */
-    flex-basis: 25%;
+        flex-basis: 25%;
+    }
 }
 
-}
-
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
 
     .categories {
         display: none;
     }
-    
-    .nav-bar__s3, .nav-bar__s2 {
+
+    .nav-bar__s3,
+    .nav-bar__s2 {
         display: none;
     }
 
@@ -366,47 +364,31 @@ body {
         height: 30px;
     }
 
-    .courses__item h3 {
-        font-size: 20px;
+    .courses__header h2,
+    .topics__title {
+        font-size: 26px;
     }
 
-    .courses__header h2 {
-    font-size: 26px;
-}
+    .topics__input input {
+        width: 100%;
+    }
 
-.topics__title {
-    font-size: 26px;
-}
+    .hero-section__content {
+        left: 0;
+        padding: 20px;
+    }
 
-.topics__input input {
-    width: 100%;
-}
+    .hero-section {
+        height: 400px;
+    }
 
-.hero-section__content {
-    position: absolute;
-    left: 0;
-    padding: 20px;
-    
-}
-
-.hero-section {
-
-    height: 400px;
-
-} 
-
-.courses__item {
-    /* width: 350px; */
-    flex-basis: 40%;
-}
-
-
-}
-
-@media screen and (max-width:500px) {
     .courses__item {
-    /* width: 350px; */
-    flex-basis: 50%;
+        flex-basis: 40%;
+    }
 }
 
+@media screen and (max-width: 500px) {
+    .courses__item {
+        flex-basis: 50%;
+    }
 }
