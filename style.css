@@ -250,7 +250,7 @@ body {
     font-size: 16px;
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
-    border-color: blueviolet;
+    border: 1px solid blueviolet;
     margin-top: 20px;
 }
 
